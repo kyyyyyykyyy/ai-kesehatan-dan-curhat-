@@ -1,0 +1,73 @@
+================================================================
+   PANDUAN INSTALASI & PENGGUNAAN - DR. AI (HEALTH ASSISTANT)
+================================================================
+
+Aplikasi ini adalah Chatbot Cerdas berbasis Artificial Intelligence (AI)
+yang dapat membantu diagnosa penyakit, memberikan rekomendasi obat,
+hingga menjadi teman curhat virtual.
+
+----------------------------------------------------------------
+A. PERSIAPAN (INSTALASI)
+----------------------------------------------------------------
+
+1. Pastikan Komputer sudah terinstall PYTHON.
+   - Jika belum, download di: https://www.python.org/downloads/
+   - Saat install, JANGAN LUPA centang kotak "Add Python to PATH".
+
+2. Buka Folder project ini.
+
+3. Klik kanan di ruang kosong pada folder, pilih "Open Terminal" 
+   atau ketik "cmd" di address bar folder lalu Enter.
+
+4. Install Library Pendukung.
+   Ketik perintah berikut di terminal/cmd, lalu tekan Enter:
+   
+   pip install -r requirements.txt
+
+   (Tunggu hingga proses instalasi selesai).
+
+----------------------------------------------------------------
+B. CARA MENJALANKAN APLIKASI
+----------------------------------------------------------------
+
+Aplikasi ini memiliki 2 tahap: Pembuatan Data & Menjalankan Bot.
+
+LANGKAH 1: Generate Database (Cukup sekali saja di awal)
+Supaya AI pintar, kita perlu menyusun database pengetahuannya dulu.
+Ketik perintah ini di terminal:
+
+   python src/bikin_csv_raksasa.py
+
+(Pastikan muncul tulisan "DATASET FINAL SELESAI").
+
+
+LANGKAH 2: Menjalankan Bot (Setiap kali ingin pakai)
+Ketik perintah ini di terminal:
+
+   streamlit run src/app_canggih.py
+
+(Tunggu sebentar, Browser akan otomatis terbuka menampilkan aplikasi).
+
+----------------------------------------------------------------
+C. CARA MENGGUNAKAN FITUR
+----------------------------------------------------------------
+
+1. Konsultasi Medis (Diagnosa)
+   - Ketik keluhan fisik Anda. 
+   - Contoh: "Sakit perut", "Kepala pusing", "Demam tinggi".
+   - AI akan memberikan Diagnosa, Obat Kimia, dan Obat Herbal.
+
+2. Teman Curhat (Psikologi)
+   - Ketik masalah perasaan Anda.
+   - Contoh: "Gw mau curhat", "Lagi sedih banget", "Stres tugas kuliah".
+   - AI akan mendengarkan dan memberikan motivasi.
+
+3. Fitur Basa-Basi
+   - Anda bisa menyapa bot selayaknya teman.
+   - Contoh: "Halo", "Lagi ngapain?", "Makasih".
+
+----------------------------------------------------------------
+CATATAN TAMBAHAN:
+- Jika loading animasi tidak muncul, pastikan internet terhubung.
+- Jika bot salah jawab, coba gunakan kata kunci yang lebih spesifik.
+================================================================
